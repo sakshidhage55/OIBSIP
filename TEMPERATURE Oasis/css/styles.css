@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb6c1;
+  background: linear-gradient(90deg, #FFC0CB 0%, #362a84 100%);
+  color: #222;
+  font-size: 1rem;
+
+
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.temperature-converter {
+  background: #FFF;
+  width: 100%;
+  position: relative;
+  min-width: 320px;
+  padding: 20px 25px 45px;
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02) inset;
+  backdrop-filter: blur(21px);
+}
+
+/* .mobile{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    align-items: center;
+} */
+
+.title {
+  color: #222;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+.result {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.result-heading {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.celcius-value {
+  border-bottom: 2px solid #bbb;
+  padding: 10px;
+  transition: all .45s ease;
+}
+
+.degree-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.degree-field {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+}
+
+label {
+  color: #555;
+  font-size: .8rem;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #bbb;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border: 1px solid #362a84;
+}
+
+option {
+  background: #f6efef;
+  color: #080808;
+}
+
+#convert-btn {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #ebe4ea, #dbecec);
+  color: #0c0202;
+  padding: 12px 80px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  transition: all .3s ease-in;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#convert-btn:hover {
+  background: linear-gradient(to bottom, #dbecec #bbb);
+}
+
+.fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
